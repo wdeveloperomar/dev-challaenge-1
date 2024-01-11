@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ----------common shared styles------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary-color: #909193;
+    --secondary-text-color: #111729;
+    --title-text-color: #223344;
+    --background-color: #F2F9FE;
+    --second-background-color: #111729;
+    --button-background-color: #2A4DD0;
+    --button-text-color: #F2F9FE;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    background-color: var(--background-color);
+
+}
+
+.container {
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+
+
+
+/* ---------------------nav styles---------------- */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+
+.menu ul li a:hover {
+    color: var(--secondary-text-color);
+}
+
+.resposive-menu {
+    color: var(--title-text-color);
+    background-color: var(--button-text-color);
+    padding: 5px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+    display: none;
+}
+
+
+/* ------------dark-mode styles-------- */
+
+.day-night-button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--second-background-color);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+
+
+.moon-fill-2, .sun-fill {
+    background-color: var(--background-color);
+    border-radius: 100%;
+}
+
+.moon-fill-2 {
+    display: none;
+}
+
+
+
+
+/* ------------------main styles----------- */
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+
+
+
+.left-column {
+    width: 40%;
+}
+
+.left-column-subtitle {
+    color: var(--secondary-text-color);
+    font-weight: 600;   
+    margin-bottom: 30px;
+
+}
+
+.left-column-title {
+    color: var(--title-text-color);
+    font-size: 3.75rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.left-column-description {
+    color: var(--text-primary-color);
+    margin-bottom: 20px;
+
+}
+
+.left-column-link {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.button {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+
+
+}
+
+.live-demo {
+    font-size: 1rem;
+    color: var(--button-background-color);
+    font-weight: 600;
+    text-decoration: underline 3px;
+}
+
+.main-container ul {
+    font-size: 0.875rem;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: var(--text-primary-color);
+}
+
+.main-container ul li {
+    background-image: url('Assets/Done_ring_round_fill.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    
+
+}
+
+.right-column {
+    width: 50%;
+}
+
+.right-column img {
+    width: 100%;
+}
+
+/* -------------@media quarries  style---------- */
+
+
+
+
+
+
